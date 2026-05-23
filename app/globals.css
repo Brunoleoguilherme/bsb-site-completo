@@ -315,4 +315,127 @@ s
     margin:0;
   }
 
+  .contactPage{
+  background:#020817;
+}
+
+.contactHero{
+  width:min(1180px,calc(100% - 44px));
+  margin:0 auto;
+  padding:110px 0 55px;
+}
+
+.contactHero h1{
+  font-size:clamp(48px,6vw,92px);
+  line-height:.95;
+  letter-spacing:-4px;
+  text-transform:uppercase;
+  margin:18px 0 28px;
+}
+
+.contactHero p{
+  max-width:920px;
+  color:#d7e4f8;
+  font-size:20px;
+  line-height:1.6;
+}
+
+.contactActions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:34px;
+}
+
+.contactFormSection{
+  width:min(1180px,calc(100% - 44px));
+  margin:0 auto 100px;
+}
+
+.contactFormCard{
+  border:1px solid rgba(0,230,118,.28);
+  border-radius:28px;
+  padding:46px;
+  background:
+    radial-gradient(circle at 15% 0%,rgba(0,230,118,.14),transparent 34%),
+    linear-gradient(135deg,rgba(7,21,45,.98),rgba(2,8,23,.98));
+  box-shadow:0 30px 90px rgba(0,0,0,.35);
+  display:grid;
+  grid-template-columns:.9fr 1.2fr;
+  gap:42px;
+}
+
+.contactFormCard h2{
+  font-size:clamp(34px,4vw,60px);
+  line-height:1;
+  text-transform:uppercase;
+  letter-spacing:-2px;
+  margin:12px 0 22px;
+}
+
+.contactFormCard p{
+  color:#cbd8ec;
+  line-height:1.7;
+  font-size:18px;
+}
+
+.contactForm{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea{
+  width:100%;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.055);
+  color:#fff;
+  border-radius:16px;
+  padding:17px 18px;
+  font-size:15px;
+  outline:none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder{
+  color:#9fb1ca;
+}
+
+.contactForm textarea{
+  grid-column:1 / -1;
+  resize:vertical;
+}
+
+.contactForm button{
+  grid-column:1 / -1;
+  border:0;
+  border-radius:16px;
+  padding:18px 22px;
+  background:var(--green);
+  color:#00160c;
+  font-weight:950;
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  cursor:pointer;
+}
+
+@media(max-width:900px){
+  .contactFormCard{
+    grid-template-columns:1fr;
+    padding:28px;
+  }
+
+  .contactForm{
+    grid-template-columns:1fr;
+  }
+
+  .contactHero h1{
+    letter-spacing:-2px;
+  }
+}
   
