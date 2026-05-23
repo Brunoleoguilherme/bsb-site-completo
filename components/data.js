@@ -33,9 +33,7 @@ export const nav = [
   ['Sobre a BSB', '/sobre'],
   ['Eventos', '/eventos'],
   ['Marketing Esportivo', '/marketing'],
-  ['Projetos', '/projetos'],
   ['Investidores', '/investidores'],
-  ['Newsroom', '/newsroom'],
   ['Contato', '/contato'],
 ];
 

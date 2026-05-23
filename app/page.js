@@ -230,7 +230,7 @@ export default function Home() {
 
             <Link
               className="primaryBtn"
-              href="/projetos"
+              href="/eventos"
             >
               Explorar projetos
               <ArrowRight size={18}/>
