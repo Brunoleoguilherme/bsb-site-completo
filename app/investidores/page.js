@@ -10,7 +10,7 @@ export default function Investidores() {
           eyebrow="Investidores & Partners"
           title={'Invista no futuro <strong>do esporte</strong>.'}
           text="A BSB desenvolve propriedades esportivas com potencial de escala, mídia, turismo, patrocínio, experiências, impacto social e expansão internacional."
-          image="/assets/college-press.png"
+          image="/assets/investidores-image.png"
         />
 
         <section className="section investorPremium">
