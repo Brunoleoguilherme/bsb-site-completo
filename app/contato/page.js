@@ -27,7 +27,7 @@ export default function Contato() {
 
             <a className="darkBtn" href={brand.instagram} target="_blank" rel="noreferrer">
               <Camera size={18} />
-              Instagram
+              Camera
             </a>
           </div>
         </section>

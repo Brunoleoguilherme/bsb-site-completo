@@ -438,4 +438,12 @@ s
     letter-spacing:-2px;
   }
 }
-  
+ 
+.contactForm select option{
+  background:#020817;
+  color:#ffffff;
+}
+
+.contactForm select:focus{
+  border-color:var(--green);
+}
