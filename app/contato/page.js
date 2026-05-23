@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MessageCircle, Instagram } from 'lucide-react';
+import { ArrowRight, Mail, MessageCircle, Camera } from 'lucide-react';
 import { PageShell } from '@/components/SiteChrome';
 import { brand } from '@/components/data';
 
@@ -26,7 +26,7 @@ export default function Contato() {
             </a>
 
             <a className="darkBtn" href={brand.instagram} target="_blank" rel="noreferrer">
-              <Instagram size={18} />
+              <Camera size={18} />
               Instagram
             </a>
           </div>
