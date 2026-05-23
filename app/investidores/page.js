@@ -1,0 +1,5 @@
+import { PageShell, HeroPage, CTA } from '@/components/SiteChrome';
+import { investorBullets } from '@/components/data';
+import { CheckCircle2 } from 'lucide-react';
+
+export default function Investidores(){return <PageShell><main><HeroPage eyebrow="Investidores & Partners" title={'Invista no futuro <strong>do esporte</strong>.'} text="A BSB desenvolve propriedades esportivas com potencial de escala, mídia, turismo, patrocínio, experiências, impacto social e expansão internacional." image="/assets/college-press.png"/><section className="section twoCol"><div><p className="eyebrow green">Oportunidade</p><h2>Projetos com narrativa, mercado, operação e potencial comercial.</h2><p>Do College Football Brasil ao Mundial de Flag, da New Players Sports ao Touchdown do Bem, a BSB conecta visão estratégica a execução real.</p></div><div className="highlightList">{investorBullets.map((b)=><span key={b}><CheckCircle2 size={18}/>{b}</span>)}</div></section><CTA title="Quer avaliar uma parceria ou investimento?" text="Entre em contato para receber deck institucional, projetos disponíveis e possibilidades de conexão com o ecossistema BSB."/></main></PageShell>}
