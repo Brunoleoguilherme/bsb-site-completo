@@ -5,6 +5,27 @@ import { ArrowRight } from 'lucide-react';
 import { PageShell, CTA } from '@/components/SiteChrome';
 import { projects, services, stats } from '@/components/data';
 
+const instagramLinks = {
+  'college-football-brasil': 'https://www.instagram.com/collegefootball_brasil/',
+  'touchdown-do-bem': 'https://www.instagram.com/touchdowndobem/',
+  'mgfl': 'https://www.instagram.com/ligamgfl/',
+  'taca-brasil': 'https://www.instagram.com/tacabrasilfa/',
+  'new-players-showcase': 'https://www.instagram.com/newplayerssports/',
+  'brasil-flag-world-championship': 'https://www.instagram.com/brasilflagworldchampionship/',
+  'world-fun-fest': 'https://www.instagram.com/worldfunfestbh/',
+  'american-fun-fest': 'https://www.instagram.com/americanfunfest/',
+
+  'brasil-fa-camp': 'https://www.instagram.com/brasilsports.business/',
+  'brasil-bowl': 'https://www.instagram.com/brasilsports.business/',
+  'game-of-dreams': 'https://www.instagram.com/brasilsports.business/',
+  'rugby-day': 'https://www.instagram.com/brasilsports.business/',
+  'mato-grosso-bowl': 'https://www.instagram.com/brasilsports.business/',
+  'brasil-x-argentina': 'https://www.instagram.com/brasilsports.business/',
+  'brasil-x-argentina-rugby': 'https://www.instagram.com/brasilsports.business/',
+  'festival-brasil-fa': 'https://www.instagram.com/brasilsports.business/',
+  'cemig-minas-bowl': 'https://www.instagram.com/brasilsports.business/',
+};
+
 export default function Home() {
   const featured = projects.slice(0, 6);
 
@@ -127,10 +148,12 @@ export default function Home() {
 
           {featured.map((p) => (
 
-            <Link
+            <a
               className={`eventCard ${p.color}`}
               key={p.slug}
-              href={`/projetos/${p.slug}`}
+              href={instagramLinks[p.slug] || 'https://www.instagram.com/brasilsports.business/'}
+              target="_blank"
+              rel="noreferrer"
             >
 
               <div className="eventVisual">
@@ -155,11 +178,11 @@ export default function Home() {
               <p>{p.description}</p>
 
               <b>
-                Ver página
+                Ver projeto
                 <ArrowRight size={15}/>
               </b>
 
-            </Link>
+            </a>
 
           ))}
 
@@ -281,13 +304,15 @@ export default function Home() {
               positivo para o Brasil.
             </p>
 
-            <Link
+            <a
               className="primaryBtn"
-              href="/projetos/touchdown-do-bem"
+              href="https://www.instagram.com/touchdowndobem/"
+              target="_blank"
+              rel="noreferrer"
             >
               Touchdown do Bem
               <ArrowRight size={18}/>
-            </Link>
+            </a>
 
           </div>
 
