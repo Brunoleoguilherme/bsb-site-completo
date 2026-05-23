@@ -447,3 +447,15 @@ s
 .contactForm select:focus{
   border-color:var(--green);
 }
+
+.contactForm select option{
+  background:#020817;
+  color:#ffffff;
+}
+
+.formStatus{
+  grid-column:1 / -1;
+  margin:0;
+  color:var(--green);
+  font-weight:900;
+}
